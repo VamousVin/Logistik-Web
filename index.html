@@ -4,10 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Costum JS -->
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            judul: "Poppins, sans-serif",
+          },
+
+          colors: {
+            bg: "#004643",
+            hero: "#e8e4e6",
+            judul: "#fffffe",
+            p: "#abd1c6",
+            button: "#f9bc60",
+            buttonText: "#001e1d",
+            footer: "#e16162",
+            g1: "#765D38",
+          },
+        },
+      };
+    </script>
+
+    <!-- <style>
+      @media (max-width: 768px) {
+        .navbar {
+          height: 44px;
+        }
+      } ;
+    </style> -->
     <title>Document</title>
   </head>
   <body>
-    <h1>hallo dunia</h1>
+    <!-- Navbar -->
+    <nav class="navbar flex bg-bg justify-between h-12">
+      <div class="flex font-judul italic self-center">
+        <h2 class="text-judul font-semibold lg:text-base ml-8 md:text-xl">
+          Bengkel
+        </h2>
+        <h2 class="text-button font-semibold md:text-xl lg:text-base">
+          Elektronika
+        </h2>
+      </div>
+      <div class="self-center mx-8 md:block hidden relative">
+        <a href="#" class="mx-2 p-2 text-button hover:text-button duration-200"
+          >Home</a
+        >
+        <a href="#" class="mx-2 p-2 text-judul hover:text-button duration-200"
+          >Tentang Kami</a
+        >
+        <a href="#" class="mx-2 p-2 text-judul hover:text-button duration-200"
+          >Pengajar</a
+        >
+        <a href="#" class="mx-2 p-2 text-judul hover:text-button duration-200"
+          >Mata Pelajaran</a
+        >
+      </div>
+      <button
+        id="hamburger"
+        class="block absolute right-4 self-center mr-4 md:hidden"
+      >
+        <span class="w-[30px] h-[2px] my-1.5 block bg-button"></span>
+        <span class="w-[30px] h-[2px] my-1.5 block bg-button"></span>
+        <span class="w-[30px] h-[2px] my-1.5 block bg-button"></span>
+      </button>
+    </nav>
+
+    <!-- Hamburger -->
+    <div id="menu" class="hidden">
+      <ul class="md:hidden bg-bg text-center absolute w-[100%]">
+        <li class="m-4 p-2 rounded-md text-button">
+          <a href="#">Home</a>
+        </li>
+        <li class="m-4 p-2 rounded-md text-judul hover:text-button">
+          <a href="#">Tentang Kami</a>
+        </li>
+        <li class="m-4 p-2 rounded-md text-judul hover:text-button">
+          <a href="#">Pengajar</a>
+        </li>
+        <li class="m-4 p-2 rounded-md text-judul hover:text-button">
+          <a href="#">Mata Pelajaran</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- hero -->
+    <div class="bg-fixed">
+      <img src="img/bengkel.jpeg" alt="" />
+    </div>
+    <!-- js -->
+    <script src="/main.js"></script>
   </body>
 </html>
