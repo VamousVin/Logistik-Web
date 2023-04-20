@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Costum JS -->
     <script>
@@ -26,16 +27,24 @@
         },
       };
     </script>
+
+    <!-- <style>
+      @media (max-width: 768px) {
+        .navbar {
+          height: 44px;
+        }
+      } ;
+    </style> -->
     <title>Document</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Navbar -->
-    <nav class="navbar flex h-12 justify-between relative">
+    <nav class="navbar flex bg-bg justify-between h-12">
       <div class="flex font-judul italic self-center">
-        <h2 class="text-judul font-semibold lg:text-xl ml-8 md:text-2xl">
+        <h2 class="text-judul font-semibold lg:text-base ml-8 md:text-xl">
           Bengkel
         </h2>
-        <h2 class="text-button font-semibold md:text-2xl lg:text-xl">
+        <h2 class="text-button font-semibold md:text-xl lg:text-base">
           Elektronika
         </h2>
       </div>
@@ -53,6 +62,7 @@
           >Mata Pelajaran</a
         >
       </div>
+      <!-- Hamburger -->
       <button
         id="hamburger"
         class="block absolute right-4 self-center mr-4 md:hidden"
@@ -63,9 +73,12 @@
       </button>
     </nav>
 
-    <!-- Hamburger -->
-    <div id="menu" class="hidden">
-      <ul class="md:hidden text-center absolute w-[100%]">
+    <!-- Menu Hamburger -->
+    <div>
+      <ul
+        id="menu"
+        class="listMenu md:hidden bg-bg text-center absolute w-[100%]"
+      >
         <li class="m-4 p-2 rounded-md text-button">
           <a href="#">Home</a>
         </li>
@@ -82,18 +95,32 @@
     </div>
 
     <!-- hero -->
-    <div>
-      <div>
-        <section class="bg-bg">
-          <h3>Hello, saya</h3>
-          <h1>Luis Kevin</h1>
-          <h3>Web Developer</h3>
-        </section>
-        <div>
-          <img src="" />
-        </div>
-      </div>
+    <div class="hero bg-fixed">
+      <img src="img/bengkel.jpeg" alt="" />
     </div>
+    <h1>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit soluta, ab
+      quia obcaecati doloremque facilis, commodi tenetur consequuntur cum quasi
+      incidunt, similique ea asperiores in recusandae natus aut neque? Nesciunt
+      autem molestiae officia ipsum asperiores, labore pariatur error, eos
+      ducimus, quia quas laborum rerum possimus ad facere debitis. Molestiae
+      tenetur nam alias qui tempora minima! Explicabo debitis tenetur voluptatem
+      odit aliquid sapiente adipisci placeat deleniti enim in accusamus, magnam
+      delectus quisquam omnis esse nemo voluptate excepturi error a architecto
+      alias unde maiores. Tempore ipsam perspiciatis inventore repellendus et
+      voluptas esse sunt officia pariatur maxime eaque, hic, iusto obcaecati
+      nisi? Aliquid, itaque? Accusantium officiis earum nihil, eaque inventore
+      libero, nulla laborum magni asperiores dolores possimus id corrupti. Neque
+      sequi cupiditate minus et animi iure sapiente autem exercitationem. Harum
+      magni natus obcaecati quod tenetur expedita deserunt, distinctio nesciunt
+      quos corrupti. Nulla quidem nihil quam molestias sit. Laborum quasi vero
+      expedita soluta fuga nostrum, magnam qui modi, provident tenetur similique
+      alias sint molestiae tempora sunt amet sapiente, recusandae facere cumque.
+      Fuga sunt, eum praesentium id minima soluta, atque error sequi assumenda
+      perferendis quos magnam quaerat amet exercitationem sapiente aut
+      repudiandae laboriosam totam? Laudantium quae laboriosam fugiat iure
+      obcaecati nemo eos atque culpa illum.
+    </h1>
     <!-- js -->
     <script src="/main.js"></script>
   </body>
